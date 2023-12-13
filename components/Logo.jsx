@@ -6,10 +6,9 @@ const Logo = () => {
   return (
     <Link href="/">
       <Image
-        className="rounded-full"
-        src="/logo.png"
-        width={94}
-        height={94}
+        src="/assets/logo.svg"
+        width={54}
+        height={54}
         priority
         alt="logo"
       />

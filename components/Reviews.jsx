@@ -12,45 +12,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
-
-const reviewsData = [
-  {
-    avatar: "/assets/reviews/avatar-1.png",
-    name: "Walid Lamraoui",
-    job: "Chef",
-    review: "Anyone whom the times of pleasure are said to be chosen.",
-  },
-  {
-    avatar: "/assets/reviews/avatar-2.png",
-    name: "Oussama Barka",
-    job: "Front-end Web Developer",
-    review: "Anyone whom the times of pleasure are said to be chosen.",
-  },
-  {
-    avatar: "/assets/reviews/avatar-3.png",
-    name: "Laila Bendjeddou",
-    job: "Front-end Web Developer",
-    review: "Anyone whom the times of pleasure are said to be chosen.",
-  },
-  {
-    avatar: "/assets/reviews/avatar-4.png",
-    name: "Abdelghani Bahri",
-    job: "Front-end Web Developer",
-    review: "Anyone whom the times of pleasure are said to be chosen.",
-  },
-  {
-    avatar: "/assets/reviews/avatar-5.png",
-    name: "Sid Ali Habchi",
-    job: "Front-end Web Developer",
-    review: "Anyone whom the times of pleasure are said to be chosen.",
-  },
-  {
-    avatar: "/assets/reviews/avatar-6.png",
-    name: "Mouloud Mecheter",
-    job: "Front-end Web Developer",
-    review: "Anyone whom the times of pleasure are said to be chosen.",
-  },
-];
+import { reviewsData } from "@/lib/dataLibrary";
 
 const Reviews = () => {
   return (
@@ -90,7 +52,7 @@ const Reviews = () => {
                       </div>
                     </div>
                   </CardHeader>
-                  <CardDescription className="text-lg text-muted-foreground">
+                  <CardDescription className="text-lg text-muted-foreground line-clamp-4">
                     {person.review}
                   </CardDescription>
                 </Card>
